@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bus</title>
+    <link rel="stylesheet" href="bus.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quick Bus</h1><br><br>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="source" placeholder="From" />
+            <input type="text" id="destination" placeholder="To" />
+            <input type="date" id="date" />
+            <button onclick="searchBuses()">Search</button>
+        </div>
+
+        <div class="bus-listing" id="bus-listing">
+            <!-- Bus list will be displayed here -->
+        </div>
+
+        <div class="seat-selection" id="seat-selection" style="display: none;">
+            <h2>Available Seats</h2>
+            <div id="seat-map"></div>
+            <button onclick="bookSeat()">Book Seat</button>
+        </div>
+
+        <div class="booking-summary" id="booking-summary" style="display: none;">
+            <h2>Booking Summary</h2>
+            <p id="summary"></p>
+            <button onclick="resetBooking()">Reset</button>
+        </div>
+    </div>
+
+    <script src="buses.js"></script>
+</body>
+</html>
