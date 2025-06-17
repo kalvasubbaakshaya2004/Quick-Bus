@@ -1,4 +1,4 @@
-// Sample data for buses (you can replace this with API data later)
+
 const buses = [
     { id: 1, name: "Bus 1", time: "10:00 AM", price: 150 },
     { id: 2, name: "Bus 2", time: "2:00 PM", price: 500 },
@@ -13,7 +13,7 @@ function searchBuses() {
     const destination = document.getElementById('destination').value;
     const date = document.getElementById('date').value;
 
-    // Simulate bus search based on the input
+
     if (source && destination && date) {
         const busListing = document.getElementById('bus-listing');
         busListing.innerHTML = '';
@@ -37,7 +37,7 @@ function selectBus(busId) {
     document.getElementById('bus-listing').style.display = 'none';
     document.getElementById('seat-selection').style.display = 'block';
 
-    // Generate seat selection UI
+    
     const seatMap = document.getElementById('seat-map');
     seatMap.innerHTML = '';
     for (let i = 1; i <= 20; i++) {
